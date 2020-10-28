@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"]</title>
+    <link href="/css/StyleSheet.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>My name is: Patel Rutvik</p>
+        <br />
+        <br />
+        @Html.ActionLink("Home", "Index", "Home")
+        @Html.ActionLink("Show the song!", "Razor", "Home")
+        @Html.ActionLink("Persons", "CreatePerson", "Home")
+    </header>
+
+    <div class="content">
+        @RenderBody()
+    </div>
+
+    <footer>
+        <h3>CSS</h3>
+        <a><b>Folder Structure:</b> I have created the directory wwwroot.I also created css folder in order to palce StyleSheet.css file. My StyleSheet.css file is inside the css folder. </a><br />
+        
+        <br /><h3>_Layout</h3>
+        <a><b>Folder Layout:</b> In project, I created Shared folder. I put _Layout.cshtml inside the Shared Folder.</a><br />
+    </footer>
+</body>
+</html>

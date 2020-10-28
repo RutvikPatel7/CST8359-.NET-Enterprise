@@ -1,0 +1,10 @@
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Lab3 - Razor";
+}
+
+<form asp-action="Count" method="post">
+    <label>Enter the number of bottles between 50 and 100:</label>
+    <input type="number" name="bottle" min="50" max="100">
+    <input type="submit" value="Count!">
+</form>

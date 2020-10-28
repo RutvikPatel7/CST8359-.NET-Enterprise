@@ -1,0 +1,28 @@
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = "CreatePerson - Lab3";
+}
+<form asp-action="Razor" method="post">
+    <input type="submit" value="Play Again" />
+</form>
+    @{
+        for (int i = @Model.bottle; i > 1; i--)
+        {
+            <br />
+            <br />
+            <a>@i green bottlees standing on the wall,</a><br />
+            <a>@i green bottlees standing on the wall,</a><br />
+            <a>And if one green bottle should accidentally fall,</a><br />
+            <a>There'll be @(i-1) green bottles standing on the wall.</a><br />
+            <br />
+
+        }
+        <a> 1 green bottlees standing on the wall,</a><br />
+        <a> 1 green bottlees standing on the wall,</a><br />
+        <a> And if one green bottle should accidentally fall,</a><br />
+        <a> There'll be no green bottles standing on the wall.</a>
+        <br /><br />
+        <a>There is no green bottle standing on the wall.</a>
+        <br /><br />
+    }
+

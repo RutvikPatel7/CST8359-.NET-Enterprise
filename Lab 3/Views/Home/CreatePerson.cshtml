@@ -1,0 +1,33 @@
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = "CreatePerson - Lab3";
+}
+
+
+<h1>Create Your Favorite Person</h1>
+<br />
+<form asp-action="DisplayPerson" method="post">
+    <label>First name:</label>
+    <input type="text" name="FirstName"><br />
+
+    <label>Last name:</label>
+    <input type="text" name="LastName"><br />
+
+    <label>Age:</label>
+    <input type="number" name="Age"><br />
+
+    <label>Email:</label>
+    <input type="email" name="EmailAddress"><br />
+
+    <label>Date of Birth:</label>
+    <input type="date" name="DOB"><br />
+
+    <label>Password:</label>
+    <input type="password" name="Password"><br />
+
+    <label>Description:</label>
+    <input type="text" name="Description"><br />
+
+    <input type="submit" value="create">
+
+</form>
